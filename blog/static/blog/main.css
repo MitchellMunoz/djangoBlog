@@ -38,6 +38,7 @@ ul {
 
 .article-title {
   color: #444444;
+  text-decoration: none;
 }
 
 a.article-title:hover {
