@@ -2,6 +2,15 @@ body {
   background: #fafafa;
   color: #333333;
   margin-top: 5rem;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin-top: 4rem;
+    font-size: 14px;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,10 +39,22 @@ ul {
 
 .content-section {
   background: #ffffff;
-  padding: 10px 20px;
+  padding: 20px;
   border: 1px solid #dddddd;
-  border-radius: 3px;
+  border-radius: 8px;
   margin-bottom: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.content-section:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .content-section {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
 }
 
 .article-title {
@@ -54,6 +75,15 @@ a.article-title:hover {
   height: 65px;
   width: 65px;
   margin-right: 16px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .article-img {
+    height: 50px;
+    width: 50px;
+    margin-right: 12px;
+  }
 }
 
 .article-metadata {
